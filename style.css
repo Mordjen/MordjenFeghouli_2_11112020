@@ -1,7 +1,6 @@
 /* Informations valables pour toute la page */
 
-#bloc-page
-{
+#bloc-page {
     display: flex-wrap;
     width: 95%;
     margin: auto;
@@ -9,56 +8,124 @@
 
 
 
-h2
-{
+h2 {
     font-size: 1em
 }
 
 
 /* HEADER */
 
-header
-{
+header {
     display: flex; 
     flex-direction: row;
 }
 
-#titre-principal img
-{
+#titre-principal img {
     width: 22%;
     height: 44%;   
 }
 
-nav, ul
-{
+nav, ul {
     list-style-type: none;
 }
 
 li {
     float: left;
-    margin-right: 10%;
   }
+
+  li a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+}
   
 
 
 
 /* BANNIERE */
-label 
-{
+label {
     display: block;
 }
 
-input, label 
-{
+input, label {
     margin: .4rem 0;
 }
 
 
+/* CORPS */
+/* SECTION 1 */
+/* Article */
+
+section {
+    display: flex;
+}
+
+
+article {
+    background-color: #f2f2f2;
+    margin-right: 20px;
+    flex: 3;
+    border-radius: 15px;
+    font-size: 0.9em;
+}
+
+aside {
+    flex: 1.2;
+    position: relative;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 0.9em;
+}
+
+}
+
+#sixboites {
+    display: flex;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.six-boites {
+    background-color: white;
+    width: 268px;
+    height: 240px;
+    padding: 5px;
+    padding-bottom: none;
+    margin: 18px;
+    border-radius: 15px;
+    }
+
+.six-boites img {
+    overflow: hidden;
+    width: 265px;
+    height: auto;
+    border-radius: 15px 15px 0 0;
+}
+#aside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.trois-boites {
+    display: flex;
+    background-color: white;
+    padding: 5px;
+    margin: 18px;
+    border-radius: 15px;
+    }
+
+.trois-boites img {
+    overflow: hidden;
+    width: 260px;
+    height: auto;
+    border-radius: 15px 0 0 15px;
 
 /* FOOTER */
 
-footer
-{
+footer {
     background-color: #F2F2F2;
     display: flex; 
     flex-direction: row;
@@ -66,11 +133,10 @@ footer
     padding-left: 25px;
     padding-bottom: 30px;
 }
-    .element:nth-child(1)
-    {
+
+.element:nth-child(1) {
         margin-right: 170px;
     }
-    .element:nth-child(2)
-    {
+.element:nth-child(2) {
         margin-right: 170px;
     }
