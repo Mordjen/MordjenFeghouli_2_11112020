@@ -1,0 +1,76 @@
+/* Informations valables pour toute la page */
+
+#bloc-page
+{
+    display: flex-wrap;
+    width: 95%;
+    margin: auto;
+}
+
+
+
+h2
+{
+    font-size: 1em
+}
+
+
+/* HEADER */
+
+header
+{
+    display: flex; 
+    flex-direction: row;
+}
+
+#titre-principal img
+{
+    width: 22%;
+    height: 44%;   
+}
+
+nav, ul
+{
+    list-style-type: none;
+}
+
+li {
+    float: left;
+    margin-right: 10%;
+  }
+  
+
+
+
+/* BANNIERE */
+label 
+{
+    display: block;
+}
+
+input, label 
+{
+    margin: .4rem 0;
+}
+
+
+
+/* FOOTER */
+
+footer
+{
+    background-color: #F2F2F2;
+    display: flex; 
+    flex-direction: row;
+    padding-top: 18px;
+    padding-left: 25px;
+    padding-bottom: 30px;
+}
+    .element:nth-child(1)
+    {
+        margin-right: 170px;
+    }
+    .element:nth-child(2)
+    {
+        margin-right: 170px;
+    }
