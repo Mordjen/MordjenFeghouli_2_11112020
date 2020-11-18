@@ -7,6 +7,9 @@
 }
 
 
+h1 {
+    font-size: 1.3em;
+}
 
 h2 {
     font-size: 1em
@@ -19,7 +22,7 @@ header {
     display: flex; 
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 5%;
+    margin-top: 2%;
 }
 
 #titre-principal img {
@@ -36,16 +39,23 @@ li {
     float: left;
   }
 
-  li a {
+li a {
     display: block;
     text-align: center;
     padding: 16px;
+    text-decoration: none;
 }
   
 
 
 
 /* BANNIERE */
+/* Message de pub*/
+#ville {
+    margin-top: -10px;
+}
+
+/* Barre de recherche */
 
 #recherche {
     display: flex;
@@ -63,6 +73,7 @@ li {
     height: 1px;
     width: auto;
 }
+
 input {
     padding: 7.5px;
     margin-left: -3px;
@@ -79,9 +90,12 @@ button {
 
 }
 
+/* Filtre */
+
 #filtre {
     display: flex;
-    margin-left: 15px;
+    margin-bottom: 15px;
+    margin-top: 20px;
 }
 
 .filtre {
@@ -105,25 +119,47 @@ button {
     margin: auto;
 }
 
+/* Information*/
+
+#info {
+    display: flex;
+    margin: 20px;
+}
+
+#info i {
+    height: 1px;
+    width: 1px;
+    color: #0065fc;
+    margin: auto;
+}
+
+#infologo {
+    border-radius: 50%;
+    height: 20px; 
+	width: 20px;
+    border: 2px #F2F2F2 solid;
+}
+
 /* CORPS */
 /* SECTION 1 */
 /* Article */
 
 section {
     display: flex;
+    margin-top: 20px;
 }
 
 
 article {
     background-color: #f2f2f2;
     margin-right: 40px;
-    flex: 3;
+    flex: 5;
     border-radius: 15px;
     font-size: 0.9em;
 }
 
 aside {
-    flex: 1.2;
+    flex: 1;
     position: relative;
     background-color: #f2f2f2;
     border-radius: 15px;
@@ -136,11 +172,12 @@ aside {
     padding: 10px;
     border-radius: 15px;
     flex-wrap: wrap;
+    margin-top: -30px;
 }
 
 .six-boites {
     background-color: white;
-    width: 268px;
+    width: 265px;
     height: 240px;
     padding: 5px;
     padding-bottom: none;
@@ -178,8 +215,29 @@ aside {
     border-radius: 15px 0 0 15px;
 }
 
-/* FOOTER */
+/* SECTION 2 */
 
+#activites {
+    display: flex;
+    border-radius: 15px;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.activites {
+    display: flex;
+    flex-direction: row;
+    box-shadow: 2px 2px 15px #d6d6d6;
+}
+
+.activites img {
+    overflow: hidden;
+    width: 260px;
+    height: auto;
+    border-radius: 15px 15px 0px 0px;
+}
+
+/* FOOTER */
 footer
 {
     background-color: #F2F2F2;

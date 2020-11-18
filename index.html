@@ -20,8 +20,8 @@
 
             <nav>
                <ul>
-                    <li> <a href="#Hébergements">Hébergements</a></li>
-                    <li> <a href="#Activités">Activités</a></li>
+                    <li> <a href="#hebergements">Hébergements</a></li>
+                    <li> <a href="#afaire">Activités</a></li>
                     <li> <a href="www.reservia.com/inscription">S'inscrire</a></li>
                 </ul>
             </nav>
@@ -30,12 +30,12 @@
         <div id="banniere">
             
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p>En plein centre ville ou en pleine nature</p>
+                <p id="ville">En plein centre ville ou en pleine nature</p>
 
 
             <div id="recherche">
                 <div id="map"><i class="fas fa-map-marker-alt"></i></div>
-                <input type="recherche" id="site-search" name="recherche" placeholder="Marseille, France">
+                <input type="search" id="site-search" name="recherche" placeholder="Marseille, France">
                 <button>Rechercher</button>
             </div>
             <div id="filtre">
@@ -44,6 +44,9 @@
                     <div class="filtre"><div class="logo"><i class="fas fa-child"></i></div>Familial</div>
                     <div class="filtre"><div class="logo"><i class="fas fa-heart"></i></div>Romantique</div>
                     <div class="filtre"><div class="logo"><i class="fas fa-dog"></i></div>Animaux autorisés</div>                
+            </div>
+            <div id="info">
+                <div id="infologo"><i class="fas fa-info"></i></div>Plus de 500 logements sont disponibles dans cette ville
             </div>
         </div>
 
@@ -97,7 +100,7 @@
             </article>
 
             <aside>
-                <div id="aside"><h1>Les plus populaires</h1> <i class="fas fa-chart-line"></i></div>
+                <div id="aside"><h1 id="hebergements">Les plus populaires</h1> <i class="fas fa-chart-line"></i></div>
                 <div id="troisboites">
                     <div class="trois-boites">
                         <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel le soleil du matin">
@@ -127,12 +130,36 @@
             </aside>
         </section>
 
-        <div id="activites">
-
-        </div>
-
 
         <!-- Section 2 -->
+
+        <div id="activites">
+            <h1 id="afaire">Activités à Marseille</h1>
+            <div class=activites>
+                <img src="images/activites/4_small/reno-laithienne-qugjhdy5fyk-unsplash.jpg" alt="Vieux port">
+                <h2>Vieux Port</h2>
+            </div>
+            <div class=activites>
+                <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
+                <h2>Fort de Pomègues</h2>
+            </div>
+            <div class=activites>
+                <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Iles du Frioul">
+                <h2>Iles du Frioul</h2>
+            </div>
+            <div class=activites>
+                <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc Nation des Calanques">
+                <h2>Parc Nation des Calanques</h2>
+            </div>
+            <div class=activites>
+                <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
+                <h2>Notre-Dame-de-la-Garde</h2>
+            </div>
+            <div class=activites>
+                <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
+                <h2>Parc Longchamp</h2>
+            </div>
+        </div>
     </div>
 
         <!-- Footer version finale -->
