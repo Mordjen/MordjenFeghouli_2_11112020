@@ -3,7 +3,7 @@
 #bloc-page {
     display: flex-wrap;
     width: 95%;
-    margin: auto;
+    margin: auto; 
 }
 
 
@@ -18,14 +18,17 @@ h2 {
 header {
     display: flex; 
     flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5%;
 }
 
 #titre-principal img {
     width: 22%;
-    height: 44%;   
+    height: 52%;  
+    padding-top: 13px; 
 }
 
-nav, ul {
+nav ul {
     list-style-type: none;
 }
 
@@ -43,14 +46,64 @@ li {
 
 
 /* BANNIERE */
-label {
-    display: block;
+
+#recherche {
+    display: flex;
 }
 
-input, label {
-    margin: .4rem 0;
+#map {
+    border-radius: 50px 50px 50px 50px / 50px 0px 0px 50px;
+    background-color: #f2f2f2;
+    padding: 7.5px;
+    padding-left: 14px;
+    padding-right: 14px;
 }
 
+#map i {
+    height: 1px;
+    width: auto;
+}
+input {
+    padding: 7.5px;
+    margin-left: -3px;
+    margin-right: -3.8px;
+    border: 1.7px #f2f2f2 solid;
+}
+
+button {
+    background-color: #0065fc;
+    color: white;
+    border: none;
+    border-radius: 25px 50px 50px 0px / 0px 50px 50px 25px;
+    padding: 9px;
+
+}
+
+#filtre {
+    display: flex;
+    margin-left: 15px;
+}
+
+.filtre {
+    display: flex;
+    margin-left: 20px;
+    border: 2px #d6d6d6 solid;
+    padding: 5px;
+    border-radius: 65px 65px 65px 65px / 75px 75px 75px 75px;
+}
+
+.logo {
+    display: flex;
+    border-radius: 50%;
+    height: 34px; 
+	width: 34px;
+    background-color: #DEEBFF;
+}
+
+#filtre i {
+    color: #0065fc;
+    margin: auto;
+}
 
 /* CORPS */
 /* SECTION 1 */
@@ -63,7 +116,7 @@ section {
 
 article {
     background-color: #f2f2f2;
-    margin-right: 20px;
+    margin-right: 40px;
     flex: 3;
     border-radius: 15px;
     font-size: 0.9em;
@@ -78,12 +131,11 @@ aside {
     font-size: 0.9em;
 }
 
-}
-
 #sixboites {
     display: flex;
     padding: 10px;
     border-radius: 15px;
+    flex-wrap: wrap;
 }
 
 .six-boites {
@@ -94,6 +146,7 @@ aside {
     padding-bottom: none;
     margin: 18px;
     border-radius: 15px;
+    box-shadow: 2px 2px 15px #d6d6d6;
     }
 
 .six-boites img {
@@ -115,6 +168,7 @@ aside {
     padding: 5px;
     margin: 18px;
     border-radius: 15px;
+    box-shadow: 2px 2px 15px #d6d6d6;
     }
 
 .trois-boites img {
@@ -122,10 +176,12 @@ aside {
     width: 260px;
     height: auto;
     border-radius: 15px 0 0 15px;
+}
 
 /* FOOTER */
 
-footer {
+footer
+{
     background-color: #F2F2F2;
     display: flex; 
     flex-direction: row;
@@ -135,8 +191,8 @@ footer {
 }
 
 .element:nth-child(1) {
-        margin-right: 170px;
-    }
+    margin-right: 170px;
+}
 .element:nth-child(2) {
-        margin-right: 170px;
-    }
+    margin-right: 170px;
+}
