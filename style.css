@@ -1,11 +1,17 @@
 /* Informations valables pour toute la page */
 
+@font-face {
+    font-family: "raleway";
+    src: url("raleway/Raleway-VariableFont_wght.ttf") format("truetype");
+}
+
 #bloc-page {
     display: flex-wrap;
     width: 95%;
     margin: auto; 
+    font-family: "raleway";
+    font-size: 0.8em;
 }
-
 
 h1 {
     font-size: 1.3em;
@@ -46,7 +52,9 @@ li a {
     text-decoration: none;
 }
   
-
+.menuItemSelected {
+    border-top: 2px solid #0065fc;
+  }
 
 
 /* BANNIERE */
@@ -96,21 +104,29 @@ button {
     display: flex;
     margin-bottom: 15px;
     margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+#filtre span {
+    padding: 10px;
+    font-weight: bold;
 }
 
 .filtre {
     display: flex;
     margin-left: 20px;
     border: 2px #d6d6d6 solid;
-    padding: 5px;
+    height: 39px;
     border-radius: 65px 65px 65px 65px / 75px 75px 75px 75px;
 }
 
 .logo {
     display: flex;
     border-radius: 50%;
-    height: 34px; 
-	width: 34px;
+    height: 42px;
+    width: 42px;
+    margin-left: -6px;
+    margin-top: -2px;
     background-color: #DEEBFF;
 }
 
@@ -130,7 +146,11 @@ button {
     height: 1px;
     width: 1px;
     color: #0065fc;
-    margin: auto;
+    padding-top: 3px;
+}
+
+#info i:before {
+    margin-left: 7.5px;
 }
 
 #infologo {
@@ -138,6 +158,13 @@ button {
     height: 20px; 
 	width: 20px;
     border: 2px #F2F2F2 solid;
+}
+
+
+
+#info span {
+    padding-top: 5px;
+    padding-left: 10px;
 }
 
 /* CORPS */
@@ -149,6 +176,9 @@ section {
     margin-top: 20px;
 }
 
+section h1 {
+    margin-left: 28px;
+}
 
 article {
     background-color: #f2f2f2;
@@ -160,10 +190,10 @@ article {
 
 aside {
     flex: 1;
-    position: relative;
     background-color: #f2f2f2;
     border-radius: 15px;
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     font-size: 0.9em;
 }
 
@@ -177,8 +207,8 @@ aside {
 
 .six-boites {
     background-color: white;
-    width: 265px;
-    height: 240px;
+    width: 210px;
+    height: 171px;
     padding: 5px;
     padding-bottom: none;
     margin: 18px;
@@ -186,10 +216,12 @@ aside {
     box-shadow: 2px 2px 15px #d6d6d6;
     }
 
-.six-boites img {
+.cube {
+    background-size: cover;
+    background-position: center;
     overflow: hidden;
-    width: 265px;
-    height: auto;
+    width: 211px;
+    height: 103px;
     border-radius: 15px 15px 0 0;
 }
 #aside {
@@ -225,7 +257,6 @@ aside {
 }
 
 .activites {
-    display: flex;
     flex-direction: row;
     box-shadow: 2px 2px 15px #d6d6d6;
 }
@@ -238,8 +269,7 @@ aside {
 }
 
 /* FOOTER */
-footer
-{
+footer {
     background-color: #F2F2F2;
     display: flex; 
     flex-direction: row;
