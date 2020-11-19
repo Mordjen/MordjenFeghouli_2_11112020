@@ -18,7 +18,12 @@ h1 {
 }
 
 h2 {
-    font-size: 1em
+    font-size: 1em;
+    margin-bottom: 2px;
+}
+
+strong {
+    font-weight: bold;
 }
 
 
@@ -60,7 +65,8 @@ li a {
 /* BANNIERE */
 /* Message de pub*/
 #ville {
-    margin-top: -10px;
+    margin-top: -9px;
+    margin-bottom: 23px;
 }
 
 /* Barre de recherche */
@@ -105,6 +111,7 @@ button {
     margin-bottom: 15px;
     margin-top: 20px;
     flex-wrap: wrap;
+    font-size: 1.1em;
 }
 
 #filtre span {
@@ -139,7 +146,6 @@ button {
 
 #info {
     display: flex;
-    margin: 20px;
 }
 
 #info i {
@@ -188,30 +194,20 @@ article {
     font-size: 0.9em;
 }
 
-aside {
-    flex: 1;
-    background-color: #f2f2f2;
-    border-radius: 15px;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 0.9em;
-}
-
 #sixboites {
     display: flex;
     padding: 10px;
     border-radius: 15px;
     flex-wrap: wrap;
-    margin-top: -30px;
+    margin-top: -20px;
 }
 
 .six-boites {
     background-color: white;
-    width: 210px;
-    height: 171px;
-    padding: 5px;
-    padding-bottom: none;
-    margin: 18px;
+    width: 205px;
+    height: 154px;
+    padding: 4px;
+    margin: 14px;
     border-radius: 15px;
     box-shadow: 2px 2px 15px #d6d6d6;
     }
@@ -220,52 +216,172 @@ aside {
     background-size: cover;
     background-position: center;
     overflow: hidden;
-    width: 211px;
-    height: 103px;
+    width: 205px;
+    height: 98px;
     border-radius: 15px 15px 0 0;
 }
+
+.mep {
+    padding-left: 10px;
+}
+
+.mep p {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+#A {
+    margin-left: 28px;
+    font-size: 1.2em;
+}
+
+aside {
+    flex: 1;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    font-size: 0.9em;
+}
+
 #aside {
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-radius: 15px;
+    padding-right: 15px;
+}
+
+#troisboites {
+    display: flex;
+    padding: 10px;
+    border-radius: 15px;
+    flex-wrap: wrap;
+    margin-top: -20px;
 }
 
 .trois-boites {
     display: flex;
     background-color: white;
-    padding: 5px;
-    margin: 18px;
+    padding: 4px;
+    margin: 14px;
+    margin-top: none;
     border-radius: 15px;
     box-shadow: 2px 2px 15px #d6d6d6;
+    height: 100px;
+    width: 265px;
     }
 
-.trois-boites img {
+.cube2 {
+    background-size: cover;
+    background-position: center;
     overflow: hidden;
-    width: 260px;
-    height: auto;
+    width: 100px;
+    height: 100px;
     border-radius: 15px 0 0 15px;
+
 }
 
 /* SECTION 2 */
 
 #activites {
-    display: flex;
     border-radius: 15px;
     padding: 10px;
+    margin-top: 20px;
+}
+
+#rangement {
+    display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .activites {
-    flex-direction: row;
     box-shadow: 2px 2px 15px #d6d6d6;
+    width: 244px;
+    border-radius: 15px 15px 15px 15px;
+    margin-top: 30px;
 }
-
+/*
 .activites img {
-    overflow: hidden;
-    width: 260px;
+    width: 244px;
     height: auto;
     border-radius: 15px 15px 0px 0px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+} */
+
+
+.encore {
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+#un {
+    width: 244px;
+    height: 335px;
+    border-radius: 15px 15px 0px 0px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+#deux {
+    width: 244px;
+    height: 163px;
+    border-radius: 15px 15px 0px 0px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+#trois {
+    width: 244px;
+    height: 103px;
+    border-radius: 15px 15px 0px 0px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+#quatre {
+    width: 244px;
+    height: 335px;
+    border-radius: 15px 15px 0px 0px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+#cinq {
+    width: 244px;
+    height: 132px;
+    border-radius: 15px 15px 0px 0px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+#six {
+    width: 244px;
+    height: 131px;
+    border-radius: 15px 15px 0px 0px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+
+#boite1 {
+    margin-left: 20px;
+}
+
+
+#boite2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 /* FOOTER */
@@ -276,6 +392,7 @@ footer {
     padding-top: 18px;
     padding-left: 25px;
     padding-bottom: 30px;
+    margin-top: 25px;
 }
 
 .element:nth-child(1) {
